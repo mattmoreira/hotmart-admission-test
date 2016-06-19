@@ -1,0 +1,165 @@
+.nav {
+	position: fixed;
+	z-index: 1;
+	left: -100%;
+
+	width: 40%;
+	min-width: 200px;
+	height: 100%;
+
+	transition: left .3s ease-in-out;
+
+	background: $white;
+
+	will-change: left;
+	&.nav--open {
+		left: 0;
+	}
+	@media(min-width: 769px) {
+		position: static;
+
+		width: 100%;
+		min-width: auto;
+	}
+	.nav__row {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+
+		border: solid $gray-border;
+		border-width: 0 .1rem;
+
+		&:first-child {
+			.nav__icon {
+			}
+		}
+	}
+	.nav__item {
+		font-size: 1.4rem;
+
+		position: relative;
+
+		display: block;
+
+		margin-bottom: .1rem;
+
+		border-bottom: .1rem solid $gray-border;
+		background: $gray-lighter;
+		&:before {
+			position: absolute;
+			left: 0;
+
+			width: .6rem;
+			height: 100%;
+			max-height: 0;
+
+			content: '';
+			transition: max-height .3s ease-in;
+
+			background: $red;
+		}
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: 1rem;
+
+			margin-top: -5px;
+
+			content: '';
+
+			@include sprite($arrow);
+		}
+		&:hover {
+			&:before {
+				height: 100%;
+				max-height: 100%;
+			}
+			&:after {
+				@include sprite-position($arrow-hover);
+			}
+			.nav__item__text {
+				color: $red;
+			}
+			.nav__icon{
+			}
+		}
+		&:last-child {
+			margin: 0;
+		}
+		&.nav__item--big {
+			background: $gray-light;
+
+			.nav__link {
+				padding: 2.8rem 0;
+				border-left: 1.4rem solid $gray-dark;
+			}
+			.nav__item__text {
+				margin-left: 1rem;
+			}
+			&:before {
+				width: 1.4rem;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.nav__link {
+		display: block;
+
+		padding: 1rem 0;
+
+		text-decoration: none;
+	}
+	.nav__item__text {
+		line-height: normal;
+
+		margin-left: 1.3rem;
+
+		vertical-align: middle;
+		text-transform: uppercase;
+
+		color: $gray-links;
+	}
+	.nav__icon {
+		line-height: normal;
+
+		display: inline-block;
+
+		width: 3rem;
+		margin-left: 1.9rem;
+
+		text-align: center;
+		vertical-align: middle;
+	}
+
+}
+
+
+.nav__toggle{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 2rem;
+    background: none;
+    border: none;
+    padding: 0;
+
+	@media(min-width: 769px){
+		display: none;
+	}
+
+	.nav__toggle__bar{
+		height: 3px;
+		background: $white;
+		width: 3rem;
+		margin-bottom: 5px;
+		display: block;
+		border-radius: 3rem;
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+}

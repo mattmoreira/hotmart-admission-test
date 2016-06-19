@@ -1,0 +1,283 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arrow-hover-name: 'arrow-hover';
+$arrow-hover-x: 81px;
+$arrow-hover-y: 122px;
+$arrow-hover-offset-x: -81px;
+$arrow-hover-offset-y: -122px;
+$arrow-hover-width: 5px;
+$arrow-hover-height: 9px;
+$arrow-hover-total-width: 167px;
+$arrow-hover-total-height: 156px;
+$arrow-hover-image: '../images/sprite.png';
+$arrow-hover: (81px, 122px, -81px, -122px, 5px, 9px, 167px, 156px, '../images/sprite.png', 'arrow-hover', );
+$arrow-name: 'arrow';
+$arrow-x: 161px;
+$arrow-y: 101px;
+$arrow-offset-x: -161px;
+$arrow-offset-y: -101px;
+$arrow-width: 5px;
+$arrow-height: 9px;
+$arrow-total-width: 167px;
+$arrow-total-height: 156px;
+$arrow-image: '../images/sprite.png';
+$arrow: (161px, 101px, -161px, -101px, 5px, 9px, 167px, 156px, '../images/sprite.png', 'arrow', );
+$buyings-hover-name: 'buyings-hover';
+$buyings-hover-x: 63px;
+$buyings-hover-y: 101px;
+$buyings-hover-offset-x: -63px;
+$buyings-hover-offset-y: -101px;
+$buyings-hover-width: 25px;
+$buyings-hover-height: 21px;
+$buyings-hover-total-width: 167px;
+$buyings-hover-total-height: 156px;
+$buyings-hover-image: '../images/sprite.png';
+$buyings-hover: (63px, 101px, -63px, -101px, 25px, 21px, 167px, 156px, '../images/sprite.png', 'buyings-hover', );
+$buyings-name: 'buyings';
+$buyings-x: 38px;
+$buyings-y: 101px;
+$buyings-offset-x: -38px;
+$buyings-offset-y: -101px;
+$buyings-width: 25px;
+$buyings-height: 21px;
+$buyings-total-width: 167px;
+$buyings-total-height: 156px;
+$buyings-image: '../images/sprite.png';
+$buyings: (38px, 101px, -38px, -101px, 25px, 21px, 167px, 156px, '../images/sprite.png', 'buyings', );
+$logo-hotmart-drop-shadow-name: 'logo-hotmart-drop-shadow';
+$logo-hotmart-drop-shadow-x: 0px;
+$logo-hotmart-drop-shadow-y: 0px;
+$logo-hotmart-drop-shadow-offset-x: 0px;
+$logo-hotmart-drop-shadow-offset-y: 0px;
+$logo-hotmart-drop-shadow-width: 167px;
+$logo-hotmart-drop-shadow-height: 101px;
+$logo-hotmart-drop-shadow-total-width: 167px;
+$logo-hotmart-drop-shadow-total-height: 156px;
+$logo-hotmart-drop-shadow-image: '../images/sprite.png';
+$logo-hotmart-drop-shadow: (0px, 0px, 0px, 0px, 167px, 101px, 167px, 156px, '../images/sprite.png', 'logo-hotmart-drop-shadow', );
+$market-hover-name: 'market-hover';
+$market-hover-x: 38px;
+$market-hover-y: 122px;
+$market-hover-offset-x: -38px;
+$market-hover-offset-y: -122px;
+$market-hover-width: 17px;
+$market-hover-height: 16px;
+$market-hover-total-width: 167px;
+$market-hover-total-height: 156px;
+$market-hover-image: '../images/sprite.png';
+$market-hover: (38px, 122px, -38px, -122px, 17px, 16px, 167px, 156px, '../images/sprite.png', 'market-hover', );
+$market-name: 'market';
+$market-x: 144px;
+$market-y: 101px;
+$market-offset-x: -144px;
+$market-offset-y: -101px;
+$market-width: 17px;
+$market-height: 16px;
+$market-total-width: 167px;
+$market-total-height: 156px;
+$market-image: '../images/sprite.png';
+$market: (144px, 101px, -144px, -101px, 17px, 16px, 167px, 156px, '../images/sprite.png', 'market', );
+$message-name: 'message';
+$message-x: 0px;
+$message-y: 101px;
+$message-offset-x: 0px;
+$message-offset-y: -101px;
+$message-width: 38px;
+$message-height: 37px;
+$message-total-width: 167px;
+$message-total-height: 156px;
+$message-image: '../images/sprite.png';
+$message: (0px, 101px, 0px, -101px, 38px, 37px, 167px, 156px, '../images/sprite.png', 'message', );
+$next-name: 'next';
+$next-x: 73px;
+$next-y: 122px;
+$next-offset-x: -73px;
+$next-offset-y: -122px;
+$next-width: 8px;
+$next-height: 14px;
+$next-total-width: 167px;
+$next-total-height: 156px;
+$next-image: '../images/sprite.png';
+$next: (73px, 122px, -73px, -122px, 8px, 14px, 167px, 156px, '../images/sprite.png', 'next', );
+$plus-hover-name: 'plus-hover';
+$plus-hover-x: 18px;
+$plus-hover-y: 138px;
+$plus-hover-offset-x: -18px;
+$plus-hover-offset-y: -138px;
+$plus-hover-width: 18px;
+$plus-hover-height: 18px;
+$plus-hover-total-width: 167px;
+$plus-hover-total-height: 156px;
+$plus-hover-image: '../images/sprite.png';
+$plus-hover: (18px, 138px, -18px, -138px, 18px, 18px, 167px, 156px, '../images/sprite.png', 'plus-hover', );
+$plus-name: 'plus';
+$plus-x: 0px;
+$plus-y: 138px;
+$plus-offset-x: 0px;
+$plus-offset-y: -138px;
+$plus-width: 18px;
+$plus-height: 18px;
+$plus-total-width: 167px;
+$plus-total-height: 156px;
+$plus-image: '../images/sprite.png';
+$plus: (0px, 138px, 0px, -138px, 18px, 18px, 167px, 156px, '../images/sprite.png', 'plus', );
+$previous-name: 'previous';
+$previous-x: 65px;
+$previous-y: 122px;
+$previous-offset-x: -65px;
+$previous-offset-y: -122px;
+$previous-width: 8px;
+$previous-height: 14px;
+$previous-total-width: 167px;
+$previous-total-height: 156px;
+$previous-image: '../images/sprite.png';
+$previous: (65px, 122px, -65px, -122px, 8px, 14px, 167px, 156px, '../images/sprite.png', 'previous', );
+$products-hover-name: 'products-hover';
+$products-hover-x: 88px;
+$products-hover-y: 101px;
+$products-hover-offset-x: -88px;
+$products-hover-offset-y: -101px;
+$products-hover-width: 18px;
+$products-hover-height: 21px;
+$products-hover-total-width: 167px;
+$products-hover-total-height: 156px;
+$products-hover-image: '../images/sprite.png';
+$products-hover: (88px, 101px, -88px, -101px, 18px, 21px, 167px, 156px, '../images/sprite.png', 'products-hover', );
+$products-name: 'products';
+$products-x: 106px;
+$products-y: 101px;
+$products-offset-x: -106px;
+$products-offset-y: -101px;
+$products-width: 18px;
+$products-height: 21px;
+$products-total-width: 167px;
+$products-total-height: 156px;
+$products-image: '../images/sprite.png';
+$products: (106px, 101px, -106px, -101px, 18px, 21px, 167px, 156px, '../images/sprite.png', 'products', );
+$search-name: 'search';
+$search-x: 124px;
+$search-y: 101px;
+$search-offset-x: -124px;
+$search-offset-y: -101px;
+$search-width: 20px;
+$search-height: 17px;
+$search-total-width: 167px;
+$search-total-height: 156px;
+$search-image: '../images/sprite.png';
+$search: (124px, 101px, -124px, -101px, 20px, 17px, 167px, 156px, '../images/sprite.png', 'search', );
+$sellings-hover-name: 'sellings-hover';
+$sellings-hover-x: 46px;
+$sellings-hover-y: 138px;
+$sellings-hover-offset-x: -46px;
+$sellings-hover-offset-y: -138px;
+$sellings-hover-width: 10px;
+$sellings-hover-height: 17px;
+$sellings-hover-total-width: 167px;
+$sellings-hover-total-height: 156px;
+$sellings-hover-image: '../images/sprite.png';
+$sellings-hover: (46px, 138px, -46px, -138px, 10px, 17px, 167px, 156px, '../images/sprite.png', 'sellings-hover', );
+$sellings-name: 'sellings';
+$sellings-x: 36px;
+$sellings-y: 138px;
+$sellings-offset-x: -36px;
+$sellings-offset-y: -138px;
+$sellings-width: 10px;
+$sellings-height: 17px;
+$sellings-total-width: 167px;
+$sellings-total-height: 156px;
+$sellings-image: '../images/sprite.png';
+$sellings: (36px, 138px, -36px, -138px, 10px, 17px, 167px, 156px, '../images/sprite.png', 'sellings', );
+$trashbin-name: 'trashbin';
+$trashbin-x: 55px;
+$trashbin-y: 122px;
+$trashbin-offset-x: -55px;
+$trashbin-offset-y: -122px;
+$trashbin-width: 10px;
+$trashbin-height: 16px;
+$trashbin-total-width: 167px;
+$trashbin-total-height: 156px;
+$trashbin-image: '../images/sprite.png';
+$trashbin: (55px, 122px, -55px, -122px, 10px, 16px, 167px, 156px, '../images/sprite.png', 'trashbin', );
+$spritesheet-width: 167px;
+$spritesheet-height: 156px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($arrow-hover, $arrow, $buyings-hover, $buyings, $logo-hotmart-drop-shadow, $market-hover, $market, $message, $next, $plus-hover, $plus, $previous, $products-hover, $products, $search, $sellings-hover, $sellings, $trashbin, );
+$spritesheet: (167px, 156px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

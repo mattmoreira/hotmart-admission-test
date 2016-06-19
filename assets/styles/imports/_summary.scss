@@ -1,0 +1,145 @@
+.summary{
+	overflow: auto;
+	width: 100%;
+
+	.summary__item{
+		list-style: none;
+		overflow: auto;
+		border: solid $gray-border;
+		border-width: 1px 1px 0px 1px;
+
+		display: flex;
+		align-items: center;
+		padding-right: 2.3rem;
+
+		&:hover{
+			.summary__read, .summary__messages__count{
+				background: $red;
+			}
+		}
+
+		&:last-child{
+			border-bottom: 1px solid $gray-border;
+		}
+
+		&:nth-child(2n+1){
+			.summary__content{
+				background: $gray-summary-odd;
+			}
+		}
+	}
+	.summary__img{
+		margin: 0.8rem 1.6rem 0.8rem 0.7rem;
+		border-radius: 50%;
+	}
+	.summary__text{
+		padding-left: 1.6rem;
+		border-left: 1px solid $gray-border;
+		color: $gray-summary-text;
+		flex-grow: 2;
+	}
+	.summary__name{
+		color: $red;
+		margin: 0;
+		font-size: 1.4rem;
+		float: left;
+
+		&:after{
+			content: '•';
+			display: block;
+			float: right;
+			margin: 0 6px;
+			color: $gray-darker;	
+		}
+	}
+	.summary__content{
+		background: $gray-summary-even;
+		margin: 1rem 0 1rem 0;
+		border-radius: 3rem 0 0 3rem;
+		display: flex;
+		align-items: center;
+
+		@include make-xs-column(12, 0);
+	}
+	.summary__checkbox{
+		text-align: center;
+		margin: 0 1.5rem;
+		-webkit-appearance: none;
+		background: $gray-lighter;
+		border: 1px solid $gray-border;
+		height: 14px;
+		width: 14px;
+
+		& + .summary__content{
+			&:after{
+				content: '✔';
+				position: absolute;
+				font-size: 1.8rem;
+				line-height: 0.8;
+				color: $red;
+				transition: opacity .2s ease-out, transform .2s ease-out;
+				will-change: opacity, transform;
+				top: 50%;
+				margin-top: -.9rem;
+				left: -2.7rem;
+				pointer-events: none;
+			}			
+		}
+
+		&:not(:checked){
+			& + .summary__content{
+				&:after{
+					opacity: 0;
+					transform: scale(0);
+				}
+			}
+		}
+
+		&:checked {
+			& + .summary__content{
+				&:after{
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	.summary__comment{
+		p{
+			margin: 0;
+			font-size: 1.6rem;
+		}
+	}
+	.summary__read{
+		color: $white;
+		text-decoration: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 3.6rem;
+		border-radius: .5rem;
+	}
+	.summary__messages__count{
+		position: absolute;
+		top: 50%;
+		margin-top: -1.4rem;
+		left: -1.4rem;
+		padding: 5.5px 3px;
+		width: 2.8rem;
+		border-radius: 50%;
+		font-size: 1.2rem;
+	}
+
+	.summary__read, .summary__messages__count{
+		background: $gray-dark;
+		transition: background ease-out .4s;
+	}
+	.summary__navigation{
+		text-align: center;
+		margin: 2.5rem 0;
+	}
+	.summary__navigation__buttons{
+		display: inline-block;
+	}
+}

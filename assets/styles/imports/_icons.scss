@@ -1,0 +1,24 @@
+@import "imports/sprite";
+
+@each $sprite in $spritesheet-sprites {
+	$sprite-name: nth($sprite, 10);
+	
+	@if str-index($sprite-name, 'hover') == null{
+		.icon__#{$sprite-name} {
+			@include sprite($sprite);
+		}		
+	}	
+	@else {
+		$unhovered-sprite: str-slice($sprite-name, 0, str-index($sprite-name, '-hover') - 1);
+
+		*:hover{	
+			.icon__#{$unhovered-sprite} {
+				@include sprite-position($sprite);
+			}
+		}
+	}
+}
+
+.icon{
+	display: inline-block;
+}

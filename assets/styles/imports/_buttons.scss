@@ -1,0 +1,22 @@
+$button-size-normal: 33px;
+$button-size-big: 39px;
+
+.button {
+	border: none;
+	background: $red;
+	border-radius: 0.5rem;
+	height: $button-size-normal;
+	width: $button-size-normal;
+	transition: background ease-out .2s;
+	will-change: background;
+	margin: 0 0.5rem;
+
+	&.button--big{
+		height: $button-size-big;
+		width: $button-size-big;
+	}
+
+	&:hover{
+		background: lighten($red, 20%);
+	}
+}

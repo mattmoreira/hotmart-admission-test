@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["$","click","toggleClass"],"mappings":"AAAAA,EAAE,gBAAgBC,MAAM,WACvBD,EAAE,QAAQE,YAAY","file":"main.js","sourcesContent":["$('.nav__toggle').click(function() {\n\t$('.nav').toggleClass('nav--open');\n});"],"sourceRoot":"/source/"}
